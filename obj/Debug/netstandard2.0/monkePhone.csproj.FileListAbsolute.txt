@@ -1,0 +1,5 @@
+C:\Users\nikol\Desktop\monkePhone\obj\Debug\netstandard2.0\monkePhone.csproj.AssemblyReference.cache
+C:\Users\nikol\Desktop\monkePhone\obj\Debug\netstandard2.0\monkePhone.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikol\Desktop\monkePhone\obj\Debug\netstandard2.0\monkePhone.AssemblyInfoInputs.cache
+C:\Users\nikol\Desktop\monkePhone\obj\Debug\netstandard2.0\monkePhone.AssemblyInfo.cs
+C:\Users\nikol\Desktop\monkePhone\obj\Debug\netstandard2.0\monkePhone.csproj.CoreCompileInputs.cache
