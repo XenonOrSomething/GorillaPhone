@@ -1,7 +1,7 @@
 # GorillaPhone
 A phone for your gorilla tag!!! (work in progress, barely works lol)
 
-Current issues with the phone
+## Current issues with the phone
 - really bad button handling system
 - highly unoptimised
 - hiding the phone barely works
