@@ -7,7 +7,7 @@ A phone for your gorilla tag!!! (work in progress, barely works lol)
 - hiding the phone barely works
 - rotation of the phone is strange
 - none of the apps work (they dont function)
--nothing really functions
+- nothing really functions
 
 ## Credits (so far)
 - chin0303, (helping me with assetbundles)
