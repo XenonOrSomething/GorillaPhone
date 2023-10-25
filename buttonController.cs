@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-public class buttonController : GorillaPressableButton
+public class buttonController
 {
 
     public string currentPage = "home";
