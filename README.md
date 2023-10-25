@@ -2,7 +2,7 @@
 A phone for your gorilla tag!!! (work in progress, barely works lol)
 
 ## Current issues with the phone
-- really bad button handling system
+- pretty bad button handling system
 - highly unoptimised
 - hiding the phone barely works
 - rotation of the phone is strange
