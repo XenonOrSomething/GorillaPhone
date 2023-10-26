@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.IO;
 using System.Reflection;
 using BepInEx;
@@ -18,6 +19,7 @@ namespace monkePhone
 	public class Plugin : BaseUnityPlugin
 	{
 		bool inRoom;
+		bool canHide = true;
         public AssetBundle LoadAssetBundle(string path)
         {
             Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path);
@@ -73,11 +75,16 @@ namespace monkePhone
 		void Update()
 		{
             /* Code here runs every frame when the mod is enabled */
-            if (ControllerInputPoller.instance.rightControllerSecondaryButtonTouch)
+            if (ControllerInputPoller.instance.rightControllerSecondaryButton)
             {
-                Debug.Log("Right controller secondary button pressed, toggling phone");
-				GameObject phone = GameObject.Find("Player Objects/Player VR Controller/GorillaPlayer/TurnParent/LeftHand Controller/monkePhone");
-				phone.SetActive(!phone.activeInHierarchy);
+				if(canHide){
+					canHide = false;
+					Debug.Log("Right controller secondary button pressed, toggling phone");
+					GameObject phone = GameObject.Find("Player Objects/Player VR Controller/GorillaPlayer/TurnParent/LeftHand Controller/monkePhone");
+					phone.SetActive(!phone.activeInHierarchy);
+					StartCoroutine(debounceTimer());
+				}
+                
             }
         }
 
@@ -100,5 +107,11 @@ namespace monkePhone
 
 			inRoom = false;
 		}
+
+		IEnumerator debounceTimer(){
+    		yield return new WaitUntil(() => !ControllerInputPoller.instance.rightControllerSecondaryButton);
+			canHide = true;
+		}
+
 	}
 }
