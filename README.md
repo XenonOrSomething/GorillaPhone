@@ -4,7 +4,7 @@ A phone for your gorilla tag!!! (work in progress, barely works lol)
 ## Current issues with the phone
 - pretty bad button handling system
 - highly unoptimised
-- hiding the phone barely works
+- ~~hiding the phone barely works~~ (?)
 - rotation of the phone is strange
 - none of the apps work (they dont function)
 - nothing really functions
